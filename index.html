@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Hover demo</title>
+	<script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<script>
+		$(document).ready(function(){
+			$('img').hover(function(){
+				var temp=$(this).attr('data-alt-src');
+				$(this).attr('data-alt-src',$(this).attr('src'));
+				$(this).attr('src',temp);
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id=left>
+		<img src="img/braveboo.jpg" data-alt-src="img/shyboo.jpg" alt="">
+		<img src="img/braveboo.jpg" data-alt-src="img/shyboo.jpg" alt="">
+	</div>
+	<div id=right>
+		<img src="img/braveboo.jpg" data-alt-src="img/shyboo.jpg" alt="">
+		<img src="img/braveboo.jpg" data-alt-src="img/shyboo.jpg" alt="">
+	</div>
+</body>
+</html>

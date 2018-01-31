@@ -1,0 +1,21 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+img{
+	height: 200px;
+	width: 200px;
+}
+#left{
+	-webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    height: 405px;
+    width: 205px;
+    display: inline-block;
+}
+#right{
+	height: 405px;
+    width: 205px;
+    float: right;
+    vertical-align: top;
+}
